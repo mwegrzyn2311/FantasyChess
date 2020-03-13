@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d00cd22b-e732-4436-bd98-65292578741c" name="Default Changelist" comment="" />
+    <list default="true" id="d00cd22b-e732-4436-bd98-65292578741c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Board/RectangularBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Board/RectangularBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Elements/AbstractPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Elements/AbstractPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Elements/Empty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Elements/Empty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Elements/IPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Elements/IPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Elements/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Elements/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/MoveLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/MoveLogic.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,15 +38,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1YL2OoGD0oeqIYWr5ONe9jZQPW1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="D:/AASem3/PO/KamienieNaRyj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
@@ -86,11 +101,25 @@
       <workItem from="1582932231344" duration="353000" />
       <workItem from="1582964000688" duration="4024000" />
       <workItem from="1583101082275" duration="2083000" />
-      <workItem from="1583239640762" duration="18584000" />
+      <workItem from="1583239640762" duration="20206000" />
+      <workItem from="1584120565499" duration="7764000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

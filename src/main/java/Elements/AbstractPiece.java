@@ -28,6 +28,15 @@ public abstract class AbstractPiece implements IPiece {
         this.moveLogic = new MoveLogic(board);
     }
 
+    public void kill() {
+        System.out.println(this+" at "+position+" gets killed");
+        if(isWhite) {
+            board.whitePieces.remove(this);
+        } else {
+            board.blackPieces.remove(this);
+        }
+    }
+
     public Image getImage() {
         return this.image.image;
     }
@@ -44,8 +53,15 @@ public abstract class AbstractPiece implements IPiece {
 
     @Override
     public void moveTo(Vector2d newPosition) {
-        Move move = new Move(this, board.getPiece(newPosition));
-        move.firstMove = !hasMoved;
+        IPiece destinationPiece = board.getPiece(newPosition);
+        Move move = new Move(this, destinationPiece, !this.hasMoved);
+        if(!(destinationPiece instanceof Empty)) {
+            if(isWhite) {
+                destinationPiece.kill();
+            } else {
+                destinationPiece.kill();
+            }
+        }
         // Check if move is castle
         if(this instanceof King && Math.abs(newPosition.subtract(position).x) == 2) {
             move.castle = true;
@@ -76,6 +92,15 @@ public abstract class AbstractPiece implements IPiece {
             } else {
                 System.out.println("Black checks white");
             }
+            if(!moveLogic.opponentCanMove(!isWhite)) {
+                if(isWhite) {
+                    System.out.println("White mates black");
+                } else {
+                    System.out.println("Black mates white");
+                }
+            }
+        } else if(!moveLogic.opponentCanMove(!isWhite)) {
+            System.out.println("Draw");
         }
     }
 
@@ -90,7 +115,8 @@ public abstract class AbstractPiece implements IPiece {
     }
 
     @Override
-    public void setFirstMove(boolean firstMove) { this.hasMoved = !firstMove; }
+    public void setFirstMove(boolean firstMove) {
+        this.hasMoved = !firstMove; }
 
     @Override
     public Vector2d getPosition() {

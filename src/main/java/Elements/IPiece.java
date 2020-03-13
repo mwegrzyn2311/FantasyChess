@@ -50,4 +50,6 @@ public interface IPiece {
      *
      */
     public int getReach();
+
+    void kill();
 }

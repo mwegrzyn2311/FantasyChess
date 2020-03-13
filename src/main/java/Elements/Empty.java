@@ -67,4 +67,7 @@ public class Empty implements IPiece {
     public String toString() {
         return "Empty";
     }
+
+    @Override
+    public void kill(){}
 }

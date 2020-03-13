@@ -23,6 +23,8 @@ public class RectangularBoard {
     public LinkedList<Move> moves = new LinkedList<>();
     public int knightMaxReach = 3;
     public int pawnMaxReach = 2;
+    public List<IPiece> whitePieces = new LinkedList<>();
+    public List<IPiece> blackPieces = new LinkedList<>();
 
     public RectangularBoard(JSONArray levelArray, LevelPanel levelPanel) {
         this.levelPanel = levelPanel;
@@ -65,6 +67,11 @@ public class RectangularBoard {
                         break;
                     default:
                         throw new IllegalArgumentException("Character " + ele.charAt(1) + " does not correspond to any existing element");
+                }
+                if (this.pieces[i][j].isWhite()) {
+                    this.whitePieces.add(this.pieces[i][j]);
+                } else {
+                    this.blackPieces.add(this.pieces[i][j]);
                 }
 
             }
@@ -114,6 +121,13 @@ public class RectangularBoard {
 
     public void undoSpecificMove(Move move) {
         move.fromPiece.setFirstMove(move.firstMove);
+        if(!(move.toPiece instanceof Empty)) {
+            if(move.toPiece.isWhite()) {
+                whitePieces.add(move.toPiece);
+            } else {
+                blackPieces.add(move.toPiece);
+            }
+        }
         if(!move.isSpecialMove()) {
             this.setPiece(move.from, move.fromPiece);
             this.setPiece(move.to, move.toPiece);

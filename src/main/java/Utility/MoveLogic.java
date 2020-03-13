@@ -6,6 +6,7 @@ import GUI.ElementTile;
 import GUI.LevelPanel;
 
 import java.util.Iterator;
+import java.util.List;
 
 
 public class MoveLogic {
@@ -290,7 +291,7 @@ public class MoveLogic {
         Iterator<ElementTile> iter = levelPanel.markedTiles.iterator();
         while(iter.hasNext()) {
             ElementTile tile = iter.next();
-            Move move = new Move(piece, board.getPiece(tile.position));
+            Move move = new Move(piece, board.getPiece(tile.position), piece.hasMoved());
             board.makeSpecificMove(move);
             if(check(piece.isWhite())) {
                 tile.demark();
@@ -298,5 +299,24 @@ public class MoveLogic {
             }
             board.undoSpecificMove(move);
         }
+    }
+
+    public boolean opponentCanMove(boolean isWhite) {
+        List<IPiece> opponentPieces;
+        if(isWhite) {
+            opponentPieces = board.whitePieces;
+        } else {
+            opponentPieces = board.blackPieces;
+        }
+        for(IPiece piece: opponentPieces) {
+            piece.markTilesYouCanMoveTo();
+            if(levelPanel.markedTiles.size() != 0) {
+                levelPanel.demarkTiles();
+                return true;
+            }
+            levelPanel.demarkTiles();
+        }
+
+        return false;
     }
 }

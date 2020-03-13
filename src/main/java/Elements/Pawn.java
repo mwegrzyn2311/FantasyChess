@@ -18,7 +18,6 @@ public class Pawn extends AbstractPiece {
     }
 
     public void markTilesYouCanMoveTo() {
-        // We start by checking if pawn can move forward
         int forwardReach = reach;
         if(!hasMoved) {
             forwardReach = Math.max(2, reach);

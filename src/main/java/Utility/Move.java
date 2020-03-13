@@ -12,7 +12,8 @@ public class Move {
     public boolean enPassant = false;
     public boolean promotion = false;
 
-    public Move(IPiece from, IPiece to) {
+    public Move(IPiece from, IPiece to, boolean firstMove) {
+        this.firstMove = firstMove;
         this.fromPiece = from;
         this.toPiece = to;
         this.from = fromPiece.getPosition();
