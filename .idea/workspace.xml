@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d00cd22b-e732-4436-bd98-65292578741c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/MoveLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/MoveLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Elements/AbstractPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Elements/AbstractPiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Elements/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Elements/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utility/MoveLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/MoveLogic.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +100,8 @@
       <workItem from="1582964000688" duration="4024000" />
       <workItem from="1583101082275" duration="2083000" />
       <workItem from="1583239640762" duration="20206000" />
-      <workItem from="1584120565499" duration="8041000" />
+      <workItem from="1584120565499" duration="11281000" />
+      <workItem from="1584722991303" duration="4000" />
     </task>
     <servers />
   </component>

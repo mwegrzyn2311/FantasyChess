@@ -294,6 +294,7 @@ public class MoveLogic {
             Move move = new Move(piece, board.getPiece(tile.position), piece.hasMoved());
             board.makeSpecificMove(move);
             if(check(piece.isWhite())) {
+
                 tile.demark();
                 iter.remove();
             }
